@@ -14,7 +14,7 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f3f3f3;
             color: #333;
         }
         .container {
@@ -24,9 +24,10 @@
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             overflow: hidden;
+            border: 1px solid #e0e0e0;
         }
         .header {
-            background-color: #005baa;
+            background-color: #535252; /* قرمز */
             color: white;
             padding: 20px;
             text-align: center;
@@ -63,7 +64,7 @@
             left: 0;
             right: 0;
             height: 2px;
-            background-color: #ccc;
+            background-color: #e0e0e0; /* طوسی */
             z-index: 1;
             transform: translateY(-50%);
         }
@@ -71,18 +72,19 @@
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            background-color: #ccc;
+            background-color: #e0e0e0; /* طوسی */
             display: flex;
             align-items: center;
             justify-content: center;
-            color: white;
+            color: #757575;
             font-weight: bold;
             position: relative;
             z-index: 2;
-            border: 3px solid #f5f5f5;
+            border: 3px solid #f3f3f3;
         }
         .progress-step.active {
-            background-color: #005baa;
+            background-color: #d32f2f; /* قرمز */
+            color: white;
         }
         .step-container {
             padding: 30px;
@@ -99,8 +101,8 @@
             overflow: visible;
         }
         .step-title {
-            color: #005baa;
-            border-bottom: 2px solid #005baa;
+            color: #d32f2f; /* قرمز */
+            border-bottom: 2px solid #ffc107; /* زرد */
             padding-bottom: 10px;
             margin-top: 0;
         }
@@ -111,25 +113,28 @@
             display: block;
             margin-bottom: 8px;
             font-weight: bold;
+            color: #5f5f5f;
         }
         input[type="text"],
         input[type="tel"],
         input[type="number"] {
             width: 100%;
             padding: 12px;
-            border: 1px solid #ddd;
+            border: 1px solid #e0e0e0; /* طوسی */
             border-radius: 5px;
             font-size: 16px;
             transition: border-color 0.3s;
+            background-color: #fafafa;
         }
         input[type="text"]:focus,
         input[type="tel"]:focus,
         input[type="number"]:focus {
-            border-color: #005baa;
+            border-color: #d32f2f; /* قرمز */
             outline: none;
+            background-color: #fff;
         }
         button {
-            background-color: #005baa;
+            background-color: #d32f2f; /* قرمز */
             color: white;
             border: none;
             padding: 12px 20px;
@@ -139,7 +144,7 @@
             transition: all 0.3s;
         }
         button:hover {
-            background-color: #004080;
+            background-color: #b71c1c; /* قرمز تیره */
             transform: translateY(-2px);
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
@@ -148,11 +153,11 @@
             box-shadow: none;
         }
         .btn-back {
-            background-color: #6c757d;
+            background-color: #9e9e9e; /* طوسی */
             margin-left: 10px;
         }
         .btn-back:hover {
-            background-color: #5a6268;
+            background-color: #757575; /* طوسی تیره */
         }
         .button-group {
             display: flex;
@@ -160,31 +165,32 @@
             margin-top: 30px;
         }
         .captcha-container {
-            background-color: #f0f0f0;
+            background-color: #f5f5f5;
             padding: 20px;
             border-radius: 5px;
             text-align: center;
             margin-bottom: 20px;
+            border: 1px solid #e0e0e0;
         }
         .captcha-text {
             font-size: 24px;
             letter-spacing: 5px;
             margin: 10px 0;
-            color: #333;
+            color: #d32f2f; /* قرمز */
             font-weight: bold;
             font-family: monospace;
         }
         .captcha-refresh {
             cursor: pointer;
-            color: #005baa;
+            color: #d32f2f; /* قرمز */
             font-size: 14px;
             transition: color 0.3s;
         }
         .captcha-refresh:hover {
-            color: #003366;
+            color: #b71c1c; /* قرمز تیره */
         }
         .error-message {
-            color: #dc3545;
+            color: #d32f2f; /* قرمز */
             font-size: 14px;
             margin-top: 5px;
             display: none;
@@ -196,26 +202,27 @@
             display: none;
         }
         .success {
-            background-color: #d4edda;
-            color: #155724;
-            border-right: 4px solid #28a745;
+            background-color: #e8f5e9; /* سبز بسیار روشن */
+            color: #2e7d32; /* سبز تیره */
+            border-right: 4px solid #4caf50; /* سبز */
         }
         .warning {
-            background-color: #fff3cd;
-            color: #856404;
-            border-right: 4px solid #ffc107;
+            background-color: #fff8e1; /* زرد بسیار روشن */
+            color: #ff8f00; /* نارنجی */
+            border-right: 4px solid #ffc107; /* زرد */
         }
         .upload-container {
-            border: 2px dashed #005baa;
+            border: 2px dashed #d32f2f; /* قرمز */
             border-radius: 5px;
             padding: 30px;
             text-align: center;
             margin-bottom: 20px;
             transition: all 0.3s;
+            background-color: #fafafa;
         }
         .upload-container.highlight {
-            background-color: #f0f8ff;
-            border-color: #003366;
+            background-color: #ffebee; /* قرمز بسیار روشن */
+            border-color: #b71c1c; /* قرمز تیره */
         }
         #imagePreview {
             max-width: 100%;
@@ -224,42 +231,45 @@
             display: none;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e0e0e0;
         }
         .tracking-code {
             font-size: 24px;
             font-weight: bold;
             letter-spacing: 3px;
-            color: #005baa;
+            color: #d32f2f; /* قرمز */
             text-align: center;
             margin: 20px 0;
             padding: 15px;
-            background-color: #f0f8ff;
+            background-color: #ffebee; /* قرمز بسیار روشن */
             border-radius: 5px;
+            border: 1px solid #ef9a9a;
         }
         .instructions {
-            background-color: #f8f9fa;
+            background-color: #f5f5f5;
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 20px;
-            border-right: 4px solid #005baa;
+            border-right: 4px solid #d32f2f; /* قرمز */
         }
         .security-code-container {
             margin: 20px 0;
             text-align: center;
         }
         .guide-box {
-            background-color: #e7f4ff;
+            background-color: #fff8e1; /* زرد بسیار روشن */
             padding: 15px;
             border-radius: 5px;
             margin-bottom: 20px;
-            border-right: 4px solid #005baa;
+            border-right: 4px solid #ffc107; /* زرد */
         }
         .guide-box h3 {
             margin-top: 0;
-            color: #005baa;
+            color: #d32f2f; /* قرمز */
         }
         .guide-box ul {
             padding-right: 20px;
+            color: #5f5f5f;
         }
         .shake {
             animation: shake 0.5s;
@@ -280,6 +290,11 @@
             .container {
                 box-shadow: none;
                 border-radius: 0;
+                border: none;
+            }
+            .tracking-code {
+                background-color: transparent !important;
+                border: none !important;
             }
         }
     </style>
@@ -288,8 +303,7 @@
     <div class="container">
         <div class="header">
             <div class="logo-container">
-                <img src="https://www.bankmellat.ir/images/logo.png" alt="بانک ملت" class="main-logo">
-                <span class="bank-name">بانک ملت</span>
+                <img src="MainLogo_Test.png" alt="بانک ملت" class="main-logo">
             </div>
             <h1>سامانه تایید هویت الکترونیکی</h1>
             <div class="progress-bar">
@@ -491,12 +505,12 @@
             });
         };
         
-        // Generate CAPTCHA code (8 characters lowercase alphanumeric)
+        // Generate CAPTCHA code (6 characters lowercase alphanumeric)
         function generateCaptcha() {
             const chars = '0123456789abcdefghijklmnopqrstuvwxyz';
             generatedCaptcha = '';
             
-            for (let i = 0; i < 8; i++) {
+            for (let i = 0; i < 6; i++) {
                 generatedCaptcha += chars.charAt(Math.floor(Math.random() * chars.length));
             }
             
@@ -504,12 +518,12 @@
             document.getElementById('captchaInput').value = '';
         }
         
-        // Generate Security CAPTCHA code (8 characters lowercase alphanumeric)
+        // Generate Security CAPTCHA code (6 characters lowercase alphanumeric)
         function generateSecurityCaptcha() {
             const chars = '0123456789abcdefghijklmnopqrstuvwxyz';
             securityCaptcha = '';
             
-            for (let i = 0; i < 8; i++) {
+            for (let i = 0; i < 6; i++) {
                 securityCaptcha += chars.charAt(Math.floor(Math.random() * chars.length));
             }
             
